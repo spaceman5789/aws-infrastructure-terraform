@@ -111,3 +111,11 @@ module "ec2" {
   alb_sg_id              = aws_security_group.alb.id
   ec2_sg_id              = aws_security_group.ec2.id
 }
+
+module "rds" {
+  source = "./modules/rds"
+
+  project_name          = var.project_name
+  private_db_subnet_ids = module.vpc.private_db_subnet_ids
+  rds_sg_id             = aws_security_group.rds.id
+}
