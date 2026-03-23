@@ -100,3 +100,14 @@ resource "aws_vpc_security_group_egress_rule" "rds_all_out" {
   ip_protocol       = "-1"
   cidr_ipv4         = "0.0.0.0/0"
 }
+
+module "ec2" {
+  source = "./modules/ec2"
+
+  project_name           = var.project_name
+  vpc_id                 = module.vpc.vpc_id
+  public_subnet_ids      = module.vpc.public_subnet_ids
+  private_app_subnet_ids = module.vpc.private_app_subnet_ids
+  alb_sg_id              = aws_security_group.alb.id
+  ec2_sg_id              = aws_security_group.ec2.id
+}
