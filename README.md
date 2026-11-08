@@ -1,5 +1,9 @@
 # AWS Infrastructure with Terraform
 
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?logo=terraform&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?logo=amazonwebservices&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+
 A production-ready, modular AWS infrastructure built with Terraform. This project provisions a complete 3-tier application architecture — networking, compute, and database — deployed across two Availability Zones in the `eu-north-1` (Stockholm) region.
 
 ---
@@ -418,3 +422,9 @@ Approximate monthly cost in `eu-north-1` at On-Demand pricing (as of 2026):
 - **AWS Provider** ~> 5.0
 - **Random Provider** ~> 3.0
 - **Region:** eu-north-1 (Stockholm)
+
+---
+
+## Author
+
+**Denis Nazarov** — DevOps Engineer · [GitHub](https://github.com/spaceman5789) · [Portfolio](https://denzo-portfolio.site)

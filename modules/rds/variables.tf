@@ -1,36 +1,36 @@
 variable "project_name" {
-    type = string
+  type = string
 }
 
 variable "private_db_subnet_ids" {
-    type = list(string)
+  type = list(string)
 }
 
 variable "rds_sg_id" {
-    type = string
+  type = string
 }
 
 variable "db_name" {
-    type    = string
-    default = "appdb"
+  type    = string
+  default = "appdb"
 }
 
 variable "db_username" {
-    type    = string
-    default = "dbadmin"
+  type    = string
+  default = "dbadmin"
 }
 
 variable "instance_class" {
-    type    = string
-    default = "db.t3.micro"
+  type    = string
+  default = "db.t3.micro"
 }
 
 variable "allocated_storage" {
-    type    = number
-    default = 20
+  type    = number
+  default = 20
 }
 
 variable "engine_version" {
-    type    = string
-    default = "16.3"
+  type    = string
+  default = "16.3"
 }
